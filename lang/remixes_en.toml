@@ -1,0 +1,9 @@
+module_remixes = "Remixes"
+
+mt_remixes_overview = "remixess"
+md_remixes_overview = "Overview of remixes"
+mt_remixes_play = "Play a Kwed remix"
+md_remixes_play = "Search Remix.Kwed.Org and queue the first matching track."
+tt_remixes_search = "Track title, artist or composer to search on Remix.Kwed.Org."
+remixes_play_queued = "Queued %s from %s."
+remixes_error = "Remix error: %s"
