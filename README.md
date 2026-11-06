@@ -3,7 +3,7 @@
 A remix-scene module for the PyGDO ecosystem: discover, download and play
 C64 and Amiga remixes across musical genres.
 
-Community sources: [SLAY Radio](https://www.slayradio.org/),
+Community sources: [SLAY Radio](https://www.slayradio.org/), [HVSC](https://hvsc.c64.org/)
 [AmigaRemix](https://amigaremix.com/) and [Remix.Kwed.Org](https://remix.kwed.org/).
 
 # pygdo-remixes (For Humans)
@@ -15,6 +15,7 @@ Community sources: [SLAY Radio](https://www.slayradio.org/),
 - Search remixes by title, artist or composer, and inspect their sources.
 - Download available tracks and play them through the audio system.
 - Explore supported radio streams.
+- $sid <search term> play and search for a SID on HVSC.
 
 ## GDTs (TODO)
 
