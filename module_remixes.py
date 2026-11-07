@@ -14,10 +14,12 @@ if TYPE_CHECKING:
 class module_remixes(GDO_Module):
 
     def gdo_dependencies(self) -> list:
-        return ['audio']
+        return ['audio', 'likes']
 
     def gdo_classes(self) -> list[type[GDO]]:
-        return []
+        from gdo.remixes.GDO_RemixSID import GDO_RemixSID
+        from gdo.remixes.GDO_RemixSIDLikes import GDO_RemixSIDLikes
+        return [GDO_RemixSID, GDO_RemixSIDLikes]
 
     async def gdo_install(self):
         pass

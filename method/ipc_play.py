@@ -5,6 +5,7 @@ from urllib.error import URLError
 
 from gdo.audio.module_audio import module_audio
 from gdo.audio.playback import play_file
+from gdo.audio.PlaybackTasks import PlaybackTasks
 from gdo.base.Application import Application
 from gdo.base.Logger import Logger
 from gdo.base.Method import Method
@@ -36,7 +37,7 @@ class ipc_play(Method):
 
     def gdo_execute(self):
         if Application.IS_DOG:
-            task = asyncio.create_task(play_track(self.param_val('url'), module_audio.instance().cfg_output_device()))
+            task = PlaybackTasks.start(play_track(self.param_val('url'), module_audio.instance().cfg_output_device()))
             TASKS.add(task)
             task.add_done_callback(TASKS.discard)
         return self.empty()

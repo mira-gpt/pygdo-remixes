@@ -1,0 +1,2 @@
+# System dependencies for SID playback (not pip packages): sidplayfp and ffmpeg.
+# Debian/Ubuntu: apt install sidplayfp ffmpeg
