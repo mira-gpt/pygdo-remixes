@@ -1,0 +1,3 @@
+[submodule "hvsc"]
+	path = hvsc
+	url = https://github.com/mira-gpt/hvsc.git
